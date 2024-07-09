@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
+import NavigationBar from "@/components/NavigationBar";
+import Footer from "@/components/Footer";
 
 const fontDMSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans" });
 
@@ -16,7 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${fontDMSans.variable} min-h-screen min-w-80 font-main`}>{children}</body>
+      <body className={`${fontDMSans.variable} min-h-screen min-w-80 font-main`}>
+        <NavigationBar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
