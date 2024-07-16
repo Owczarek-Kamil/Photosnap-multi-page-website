@@ -21,7 +21,7 @@ export default function TwoColumnStoryShowcaseSection({
   const { mobile, tablet, desktop } = imagesSrc;
 
   return (
-    <article className="sm:flex">
+    <section className="sm:flex">
       <div
         className={`relative h-67.75 sm:h-[37.5rem] sm:min-w-[35.5%] 2xl:min-w-[57.64%] ${imageOnLeft ? "sm:order-first" : "sm:order-last"}`}
       >
@@ -57,12 +57,12 @@ export default function TwoColumnStoryShowcaseSection({
           >
             <div className="relative">
               <span>View the stories</span>
-              <div className="absolute h-0.25 w-full bg-color-white opacity-0 transition-all duration-300 group-hover:opacity-100 group-focus-visible:opacity-100" />
+              <div className="absolute h-0.25 w-full bg-color-black opacity-0 transition-all duration-300 group-hover:opacity-100 group-focus-visible:opacity-100" />
             </div>
             <Image src="/shared/desktop/arrow.svg" width={42} height={12} alt="" />
           </Link>
         </div>
       </div>
-    </article>
+    </section>
   );
 }
