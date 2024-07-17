@@ -57,7 +57,7 @@ export default function TwoColumnHeader({ imagesSrc, title, description, display
           {displayGetInviteLink && (
             <Link
               href="/#"
-              className="group flex items-center gap-5.5 text-3/4 font-bold uppercase tracking-[2px] text-color-white outline-offset-4"
+              className="group flex items-center gap-5.5 text-3/4 font-bold uppercase tracking-[2px] text-color-white"
             >
               <div className="relative">
                 <span>Get an invite</span>

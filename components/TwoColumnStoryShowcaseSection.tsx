@@ -46,9 +46,9 @@ export default function TwoColumnStoryShowcaseSection({
       <div className="relative flex items-center bg-color-white py-18 pl-8.25 pr-6 md:px-13.5 4xl:pl-28 4xl:pr-27.75">
         <div className="flex flex-col gap-5.75 sm:relative md:gap-12">
           <div className="flex flex-col gap-4 md:gap-5.25">
-            <h1 className="text-balance text-8/10 font-bold uppercase tracking-[3.33px] text-color-black md:text-10/12 md:tracking-[4.17px]">
+            <h2 className="text-balance text-8/10 font-bold uppercase tracking-[3.33px] text-color-black md:text-10/12 md:tracking-[4.17px]">
               {title}
-            </h1>
+            </h2>
             <p className="text-3.75/6.25 text-color-black/60">{description}</p>
           </div>
           <Link
