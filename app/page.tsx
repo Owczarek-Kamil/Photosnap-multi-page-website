@@ -1,6 +1,7 @@
 import { BEAUTIFUL_STORIES_SECTION, DESIGNED_FOR_EVERYONE_SECTION, MAIN_PAGE_HEADER } from "@/content/pagesContent";
 import TwoColumnHeader from "@/components/TwoColumnHeader";
 import TwoColumnStoryShowcaseSection from "@/components/TwoColumnStoryShowcaseSection";
+import StoryCardList from "@/components/StoryCardList";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
           description={DESIGNED_FOR_EVERYONE_SECTION.description}
           imageOnLeft={DESIGNED_FOR_EVERYONE_SECTION.imageOnLeft}
         />
+        <StoryCardList isHomepage />
       </div>
     </main>
   );
