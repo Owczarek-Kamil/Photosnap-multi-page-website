@@ -1,6 +1,6 @@
-import { StoryCardProps } from "@/components/StoryCard";
+import { TStoryCard } from "@/types";
 
-const STORIES_CARDS_DATA: StoryCardProps[] = [
+const STORIES_CARDS_DATA: TStoryCard[] = [
   {
     imagesSrc: {
       mobile: "/stories/mobile/mountains.jpg",

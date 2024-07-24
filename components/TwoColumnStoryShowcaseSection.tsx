@@ -1,16 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { TStoryShowcase } from "@/types";
 
-export type TwoColumnStoryShowcaseSectionProps = {
-  imagesSrc: {
-    mobile: string;
-    tablet: string;
-    desktop: string;
-  };
-  title: string;
-  description: string;
-  imageOnLeft: boolean;
-};
+export type TwoColumnStoryShowcaseSectionProps = TStoryShowcase;
 
 export default function TwoColumnStoryShowcaseSection({
   imagesSrc,

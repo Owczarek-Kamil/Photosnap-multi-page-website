@@ -20,7 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${fontDMSans.variable} min-h-screen min-w-80 font-main`}>
         <NavigationBar />
-        {children}
+        <main>
+          <div className="mx-auto max-w-[90rem]">{children}</div>
+        </main>
         <Footer />
       </body>
     </html>

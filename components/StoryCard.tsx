@@ -1,16 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { TStoryCard } from "@/types";
 
-export type StoryCardProps = {
-  imagesSrc: {
-    mobile: string;
-    desktop: string;
-  };
-  title: string;
-  author: string;
-  date: string;
-  isVisibleOnMainPage: boolean;
-};
+export type StoryCardProps = TStoryCard;
 
 export default function StoryCard({ imagesSrc, title, author, date, isVisibleOnMainPage }: StoryCardProps) {
   const { mobile, desktop } = imagesSrc;

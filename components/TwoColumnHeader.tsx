@@ -1,16 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { THeader } from "@/types";
 
-export type TwoColumnHeaderProps = {
-  imagesSrc: {
-    mobile: string;
-    tablet: string;
-    desktop: string;
-  };
-  title: string;
-  description: string;
-  displayGetInviteLink: boolean;
-};
+export type TwoColumnHeaderProps = THeader;
 
 export default function TwoColumnHeader({ imagesSrc, title, description, displayGetInviteLink }: TwoColumnHeaderProps) {
   const { mobile, tablet, desktop } = imagesSrc;

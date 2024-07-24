@@ -1,7 +1,6 @@
-import { TwoColumnHeaderProps } from "@/components/TwoColumnHeader";
-import { TwoColumnStoryShowcaseSectionProps } from "@/components/TwoColumnStoryShowcaseSection";
+import { THeader, TStoryShowcase } from "@/types";
 
-export const MAIN_PAGE_HEADER: TwoColumnHeaderProps = {
+export const MAIN_PAGE_HEADER: THeader = {
   imagesSrc: {
     mobile: "/home/mobile/create-and-share.jpg",
     tablet: "/home/tablet/create-and-share.jpg",
@@ -13,7 +12,7 @@ export const MAIN_PAGE_HEADER: TwoColumnHeaderProps = {
   displayGetInviteLink: true,
 };
 
-export const BEAUTIFUL_STORIES_SECTION: TwoColumnStoryShowcaseSectionProps = {
+export const BEAUTIFUL_STORIES_SECTION: TStoryShowcase = {
   imagesSrc: {
     mobile: "/home/mobile/beautiful-stories.jpg",
     tablet: "/home/tablet/beautiful-stories.jpg",
@@ -24,7 +23,7 @@ export const BEAUTIFUL_STORIES_SECTION: TwoColumnStoryShowcaseSectionProps = {
   imageOnLeft: true,
 };
 
-export const DESIGNED_FOR_EVERYONE_SECTION: TwoColumnStoryShowcaseSectionProps = {
+export const DESIGNED_FOR_EVERYONE_SECTION: TStoryShowcase = {
   imagesSrc: {
     mobile: "/home/mobile/designed-for-everyone.jpg",
     tablet: "/home/tablet/designed-for-everyone.jpg",
