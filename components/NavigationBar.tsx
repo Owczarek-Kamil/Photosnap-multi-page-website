@@ -1,15 +1,29 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function NavigationBar() {
+export type NavigationBarProps = {
+  renderedInMobileMenu: boolean;
+  toggleMobileMenuFn: () => void;
+};
+
+export default function NavigationBar({ renderedInMobileMenu, toggleMobileMenuFn }: NavigationBarProps) {
   return (
     <nav className="sticky top-0 z-50 bg-color-white px-6 py-7 md:pl-9.75 md:pr-10">
       <div className="mx-auto flex max-w-[69.375rem] items-center justify-between">
         <Link href="/" aria-label="Go to homepage" className="outline-offset-4">
           <Image src="/shared/desktop/logo.svg" width={170} height={16} alt="Photosnap logo" />
         </Link>
-        <button type="button" aria-label="Open menu" className="h-4 w-5 outline-offset-4 md:hidden">
-          <Image src="/shared/mobile/menu.svg" width={20} height={6} alt="" />
+        <button
+          type="button"
+          aria-label={renderedInMobileMenu ? "Close menu" : "Open menu"}
+          onClick={toggleMobileMenuFn}
+          className="h-4 w-5 outline-offset-4 md:hidden"
+        >
+          {renderedInMobileMenu ? (
+            <Image src="/shared/mobile/close.svg" width={20} height={6} alt="" />
+          ) : (
+            <Image src="/shared/mobile/menu.svg" width={20} height={6} alt="" />
+          )}
         </button>
         <ul className="hidden items-center gap-9.25 md:flex">
           <li>
