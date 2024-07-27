@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-color-black px-15 py-14 md:py-16 md:pl-9.75 md:pr-10">
+    <footer className="mt-auto bg-color-black px-15 py-14 md:py-16 md:pl-9.75 md:pr-10">
       <div className="mx-auto flex max-w-[69.375rem] flex-col items-center gap-29.75 md:flex-row md:items-stretch md:justify-between md:gap-0">
         <div className="flex flex-col items-center justify-center gap-8 md:items-start 2xl:grid 2xl:grid-cols-2 2xl:grid-rows-2 2xl:gap-x-27.5 2xl:gap-y-0">
           <Link href="/" aria-label="Go to homepage" className="outline-offset-4">

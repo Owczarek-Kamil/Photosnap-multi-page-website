@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
-import NavigationBar from "@/components/NavigationBar";
+import NavigationController from "@/components/NavigationController";
 import Footer from "@/components/Footer";
 
 const fontDMSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans" });
@@ -18,8 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${fontDMSans.variable} min-h-screen min-w-80 font-main`}>
-        <NavigationBar />
+      <body className={`${fontDMSans.variable} flex min-h-screen min-w-80 flex-col font-main`}>
+        <NavigationController />
         <main>
           <div className="mx-auto max-w-[90rem]">{children}</div>
         </main>
