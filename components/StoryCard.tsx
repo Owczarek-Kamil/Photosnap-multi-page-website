@@ -25,7 +25,7 @@ export default function StoryCard({ imagesSrc, title, author, date, isVisibleOnM
         <div className="flex flex-col gap-1 border-b border-b-color-white/25 pb-4">
           {!isVisibleOnMainPage && <p className="text-3.25/4.25 text-color-white">{date}</p>}
           <h2 className="text-4.5/6.25 font-bold text-color-white">{title}</h2>
-          <p className="text-3.25/4.25 text-color-white">{author}</p>
+          <p className="text-3.25/4.25 text-color-white">by {author}</p>
         </div>
         <div className="pt-5">
           <span className="group flex items-center justify-between gap-5.5 text-3/4 font-bold uppercase tracking-[2px] text-color-white outline-offset-4">
