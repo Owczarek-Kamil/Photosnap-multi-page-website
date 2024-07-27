@@ -26,7 +26,9 @@ export default function Home() {
         imageOnLeft={DESIGNED_FOR_EVERYONE_SECTION.imageOnLeft}
       />
       <StoryCardList isHomepage />
-      <ProductFeatureList isHomepage />
+      <div className="py-20 pl-8.25 pr-8 md:py-30">
+        <ProductFeatureList isHomepage />
+      </div>
     </>
   );
 }

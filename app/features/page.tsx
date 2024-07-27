@@ -12,7 +12,9 @@ export default function FeaturesPage() {
         displayGetInviteLink={FEATURES_PAGE_HEADER.displayGetInviteLink}
         imagesSrc={FEATURES_PAGE_HEADER.imagesSrc}
       />
-      <ProductFeatureList isHomepage={false} />
+      <div className="pb-22.75 pl-8.25 pr-8 pt-16 md:px-9.75 md:py-28 xl:py-40">
+        <ProductFeatureList isHomepage={false} />
+      </div>
       <CallToActionWithBackgroundImage />
     </>
   );
