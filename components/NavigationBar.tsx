@@ -8,7 +8,7 @@ export type NavigationBarProps = {
 
 export default function NavigationBar({ renderedInMobileMenu, toggleMobileMenuFn }: NavigationBarProps) {
   return (
-    <nav className="sticky top-0 z-50 bg-color-white px-6 py-7 md:pl-9.75 md:pr-10">
+    <nav className="sticky top-0 z-50 bg-color-white px-6 py-7 md:pl-9.75 md:pr-10 2xl:py-4">
       <div className="mx-auto flex max-w-[69.375rem] items-center justify-between">
         <Link href="/" aria-label="Go to homepage" className="outline-offset-4">
           <Image src="/shared/desktop/logo.svg" width={170} height={16} alt="Photosnap logo" />
