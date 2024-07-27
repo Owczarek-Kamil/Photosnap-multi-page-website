@@ -24,7 +24,7 @@ export default function StoryCard({ imagesSrc, title, author, date, isVisibleOnM
       <div className="relative z-10">
         <div className="flex flex-col gap-1 border-b border-b-color-white/25 pb-4">
           {!isVisibleOnMainPage && <p className="text-3.25/4.25 text-color-white">{date}</p>}
-          <h3 className="text-4.5/6.25 font-bold text-color-white">{title}</h3>
+          <h2 className="text-4.5/6.25 font-bold text-color-white">{title}</h2>
           <p className="text-3.25/4.25 text-color-white">{author}</p>
         </div>
         <div className="pt-5">

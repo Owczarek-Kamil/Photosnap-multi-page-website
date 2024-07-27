@@ -35,15 +35,12 @@ export default function ComparePlans() {
                     <div key={plan} className="flex flex-col gap-2 sm:gap-0">
                       <p className="text-2.5/3.25 uppercase tracking-[1.67px] text-color-black/50 sm:hidden">{plan}</p>
                       {plans.includes(plan) ? (
-                        <Image
-                          src="/pricing/desktop/check.svg"
-                          width={16}
-                          height={12}
-                          alt=""
-                          aria-label={`Feature "${feature}" available in "${plan}" plan`}
-                        />
+                        <>
+                          <Image src="/pricing/desktop/check.svg" width={16} height={12} alt="" />
+                          <p className="sr-only">{`Feature "${feature}" available in "${plan}" plan`}</p>
+                        </>
                       ) : (
-                        <span className="sr-only" aria-label={`Feature "${feature}" not available in "${plan}" plan`} />
+                        <p className="sr-only">{`Feature "${feature}" not available in "${plan}" plan`}</p>
                       )}
                     </div>
                   ))}
