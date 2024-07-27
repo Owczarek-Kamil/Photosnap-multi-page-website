@@ -50,3 +50,26 @@ export type TStoryCard = {
   date: string;
   isVisibleOnMainPage: boolean;
 };
+
+export type TPricingPlan = {
+  title: string;
+  description: string;
+  price: {
+    monthly: number;
+    yearly: number;
+  };
+  promoted?: boolean;
+};
+
+export type TBusinessPlanName = "basic" | "pro" | "business";
+
+export type TFeaturesAvailability = {
+  "unlimited story posting": TBusinessPlanName[];
+  "unlimited photo upload": TBusinessPlanName[];
+  "embeding custom content": TBusinessPlanName[];
+  "customize metadata": TBusinessPlanName[];
+  "advanced metrics": TBusinessPlanName[];
+  "photo downloads": TBusinessPlanName[];
+  "search engine indexing": TBusinessPlanName[];
+  "custom analytics": TBusinessPlanName[];
+};

@@ -21,6 +21,7 @@ const config: Config = {
       "color-black": "hsl(0,0%,0%)",
       "color-white": "hsl(0,0%,100%)",
       "color-light-grey": "hsl(0,0%,87%)",
+      "color-very-light-grey": "hsl(0,0%,96%)",
     },
     screens: {
       "xsm": "512px",

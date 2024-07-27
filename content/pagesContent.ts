@@ -46,3 +46,15 @@ export const FEATURES_PAGE_HEADER: THeader = {
     "We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories.",
   displayGetInviteLink: false,
 };
+
+export const PRICING_PAGE_HEADER: THeader = {
+  imagesSrc: {
+    mobile: "/pricing/mobile/hero.jpg",
+    tablet: "/pricing/tablet/hero.jpg",
+    desktop: "/pricing/desktop/hero.jpg",
+  },
+  title: "Pricing",
+  description:
+    "Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.",
+  displayGetInviteLink: false,
+};
